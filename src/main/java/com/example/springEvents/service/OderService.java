@@ -12,7 +12,6 @@ import java.util.List;
 @Service
 public class OderService
 {
-    private Integer ex;
 @Autowired
 ApplicationEventPublisher applicationEventPublisher;
 
