@@ -1,4 +1,4 @@
-# Spring Events + Async — small description for GitHub
+# Spring Events
 
 A tiny Spring Boot example showing how to publish and handle application events **asynchronously**.
 It registers a `SimpleApplicationEventMulticaster` bean with a custom `ErrorHandler` to catch listener exceptions, defines an `OrderEvent` payload, and demonstrates a service that publishes the event when a new order is added. Three `@EventListener` methods (`logOrder`, `throwFakeError`, `handleOrderEvent`) are annotated with `@Async`, so they run on background threads (one of them intentionally throws an exception that is picked up by the multicaster’s error handler).
