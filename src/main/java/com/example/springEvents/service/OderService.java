@@ -18,7 +18,6 @@ ApplicationEventPublisher applicationEventPublisher;
 List<Order> orders = new ArrayList<>();
 public  List<Order> getOrders()
 {
-
     return orders;
 }
 public void addOrder(Order order)
